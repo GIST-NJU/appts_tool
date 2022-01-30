@@ -1,0 +1,8 @@
+version: '2'
+services:
+  web:
+    image: yanwang22/appts:v2
+    command: /mytest/appts  2 MCAC_00.ctw 300
+    working_dir: /app
+    volumes:
+      - ./:/app
