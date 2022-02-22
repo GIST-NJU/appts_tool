@@ -30,13 +30,13 @@ The contents of the docker-compose.yml are as follows：
 version: '2'
 services:
   web:
-    image: yanwang22/appts:v2
+    image: yanwang22/appts:v3
     command: /mytest/appts strength modelFileName [cutoffTime]
     working_dir: /app
     volumes:
       - ./:/app
 
-In docker-compose.yml file, 'yanwang22/appts:v2' is the image, which has been uploaded to Docker Hub repository, and '/mytest/appts' is the executable binary of the tool in the container.
+In docker-compose.yml file, 'yanwang22/appts:v3' is the image, which has been uploaded to Docker Hub repository, and '/mytest/appts' is the executable binary of the tool in the container.
 The 'strength', 'modelFileName' and 'cutoffTime' have same meaning as they are in the first way to run the tool, and they must be replaced by the specific values.
 
 
